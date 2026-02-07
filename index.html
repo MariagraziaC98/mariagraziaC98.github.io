@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mariagrazia Cairo | Personal Academic Website</title>
+  <title>Mariagrazia Cairo | Academic Website</title>
+
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -12,49 +13,88 @@
       color: #333;
       line-height: 1.6;
     }
+
     header {
       background-color: #0b3c5d;
       color: white;
-      padding: 2rem;
+      padding: 2.5rem 2rem;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.3rem;
     }
+
     header p {
       margin-top: 0.5rem;
       font-size: 1.1rem;
     }
+
     nav {
       background-color: #16324f;
-      padding: 0.5rem 2rem;
+      padding: 0.6rem 2rem;
     }
+
     nav a {
       color: white;
       margin-right: 1.5rem;
       text-decoration: none;
       font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 2rem;
+      padding: 2.5rem;
       background-color: white;
     }
+
     section {
-      margin-bottom: 3rem;
+      margin-bottom: 3.5rem;
     }
+
     h2 {
       border-bottom: 2px solid #0b3c5d;
       padding-bottom: 0.3rem;
       color: #0b3c5d;
     }
+
+    /* ABOUT SECTION */
+    .about-box {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      background-color: #f2f6fa;
+      padding: 2rem;
+      border-left: 5px solid #0b3c5d;
+    }
+
+    .about-text p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+
+    .about-highlight {
+      font-style: italic;
+      color: #0b3c5d;
+    }
+
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #0b3c5d;
+    }
+
     ul {
       padding-left: 1.2rem;
     }
+
     footer {
       text-align: center;
       padding: 1.5rem;
@@ -63,6 +103,7 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -80,44 +121,69 @@
 
 <div class="container">
 
+  <!-- ABOUT -->
   <section id="about">
-    <h2>About</h2>
-    <p>
-      I am a PhD student in Methodological Statistics at Sapienza University of Rome.
-      My academic interests focus on statistical methodology and its applications,
-      with particular attention to rigorous quantitative analysis and research design.
-    </p>
+    <h2>About me</h2>
+
+    <div class="about-box">
+      <!-- FOTO: carica un file chiamato profile.jpg -->
+      <img src="profile.jpg" alt="Profile photo" class="profile-pic">
+
+      <div class="about-text">
+        <p>
+          I am a PhD student in Methodological Statistics at Sapienza University of Rome.
+          My academic interests lie at the intersection of quantitative methods,
+          public policy analysis, and applied statistics.
+        </p>
+
+        <p>
+          My research focuses on the empirical analysis of public institutions
+          and economic policies, with particular attention to data-driven
+          methodologies and statistical modeling.
+        </p>
+
+        <p class="about-highlight">
+          Research areas: public policy analysis, statistical modeling, applied econometrics.
+        </p>
+      </div>
+    </div>
   </section>
 
+  <!-- RESEARCH -->
   <section id="research">
-    <h2>Research Interests</h2>
+    <h2>Research interests</h2>
     <ul>
-      <li>Statistical methodology</li>
-      <li>Quantitative data analysis</li>
-      <li>Research design and evaluation</li>
+      <li>Public policy evaluation</li>
+      <li>Statistical modeling</li>
+      <li>Applied econometrics</li>
     </ul>
   </section>
 
+  <!-- CV -->
   <section id="cv">
     <h2>Curriculum Vitae</h2>
     <p>
-      <a href="CV_Mariagrazia_Cairo.pdf" target="_blank">Download CV (PDF)</a>
+      <a href="CV_Mariagrazia_Cairo.pdf" target="_blank">
+        Download CV (PDF)
+      </a>
     </p>
   </section>
 
+  <!-- PUBLICATIONS -->
   <section id="publications">
-    <h2>Publications and Working Papers</h2>
+    <h2>Publications & Working Papers</h2>
     <ul>
       <li>Article title – Journal, year</li>
       <li>Working paper title – year</li>
     </ul>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
     <h2>Contact</h2>
 
     <p>
-      Institutional email:
+      Email:
       <a href="mailto:mariagrazia.cairo@uniroma1.it">
         mariagrazia.cairo@uniroma1.it
       </a>
@@ -131,14 +197,14 @@
         LinkedIn
       </a>
     </p>
-
   </section>
 
 </div>
 
 <footer>
-  © 2026 Mariagrazia Cairo – Academic Personal Website
+  © 2026 Mariagrazia Cairo – Academic personal website
 </footer>
 
 </body>
 </html>
+
